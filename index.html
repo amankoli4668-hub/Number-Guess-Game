@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Secret Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-card">
+
+        <div class="game-icon">?</div>
+
+        <h1>Guess the Number</h1>
+
+        <p class="subtitle">
+            I have chosen a secret number between 1 and 100.
+        </p>
+
+        <div class="input-section">
+            <input 
+                type="number" 
+                id="guessInput" 
+                placeholder="Enter your guess"
+                min="1"
+                max="100"
+            >
+
+            <button id="submitBtn">Guess</button>
+        </div>
+
+        <p id="message">Make your first guess!</p>
+
+        <div class="attempts">
+            Attempts: <span id="attempts">0</span>
+        </div>
+        <button id="replay">Play Again</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

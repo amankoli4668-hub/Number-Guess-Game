@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #ffd6e7, #f8b4d9);
+}
+
+.game-card {
+    width: 380px;
+    padding: 25px 35px;
+    text-align: center;
+
+    background: #fff;
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(180, 70, 120, 0.25);
+}
+
+/* Question mark circle */
+
+.game-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #ff4f9a;
+    color: white;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(255, 79, 154, 0.3);
+}
+
+h1 {
+    color: #29212a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Input + button */
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 14px;
+
+    border: 2px solid #f2c4d9;
+    border-radius: 12px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff4f9a;
+}
+
+button {
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff4f9a;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ed3c89;
+    transform: translateY(-2px);
+}
+
+/* Message */
+
+#message {
+    min-height: 25px;
+    margin-top: 25px;
+
+    color: #d8327b;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Attempts */
+
+.attempts {
+    margin-top: 20px;
+    padding: 12px;
+
+    background: #fff0f6;
+    border-radius: 10px;
+    font-weight: bold;
+
+    color: rgb(153, 152, 152);
+    letter-spacing: 0.12rem;
+}
+
+#attempts {
+    color: #d8327b;
+    font-weight: bold;
+}
+
+#replay{
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+    .game-card {
+        width: calc(100% - 30px);
+        padding: 35px 25px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
